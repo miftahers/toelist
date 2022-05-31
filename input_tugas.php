@@ -55,9 +55,9 @@ if(isset($_POST['submit'])) {
                     <br>
                     <textarea class= "input-tugas-textarea" name="deskripsi" cols="30" rows="5" placeholder="deskripsi tugas" required></textarea>
                     <br>
-                    <input class="input-tugas-input" type="datetime-local" name="deadline" placeholder="Deadline" required>
+                    <input class="input-tugas-input datetime" type="datetime-local" name="deadline" placeholder="Deadline" required>
                     <br>
-                    <button class="input-tugas-btn" name="submit">Submit</button>
+                    <button class="input-tugas-btn" name="submit">Masukan Tugas Baru</button>
                 </form>    
             </div>
             </div>
