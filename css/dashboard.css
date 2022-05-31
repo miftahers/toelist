@@ -130,6 +130,20 @@ table {
 }
 
 /* input tugas */
+.h2-input {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: 'Aileron';
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+    display: block;
+}
+.h2-input span {
+    color: var(--greeny);
+}
 form {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -194,6 +208,9 @@ textarea {
 }
 /* responsive */
 @media only screen and (max-width: 1080px) {
+    .back-to-dashboard {
+        max-width: 280px;
+    }
     .h2-input {
         width: 300px;
     }

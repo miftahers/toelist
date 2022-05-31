@@ -49,7 +49,7 @@ if(isset($_POST['submit'])) {
                 <div class="tabel">
                 <a href="dashboard.php" class="back-to-dashboard">Kembali ke dashboard</a>
                 <br>
-                <h2 class="h2-input">Input Tugas</h2>
+                <h2 class="h2-input">Input <span>Tugas</span></h2>
                 <br><br>
                 <form action="" method="post">
                     <input class="input-tugas-input" type="text" name="nama" placeholder="Mata Kuliah" required>
