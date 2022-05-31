@@ -1,0 +1,290 @@
+:root {
+    --base : #1f1f24;
+    --base-light : #fff;
+    --greeny : #438972;
+}
+html {
+    font-family: 'Aileron';
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--base);
+    color: var(--base-light);
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 15px;
+}
+.header {
+    text-transform: uppercase;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
+    -webkit-box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
+    -moz-box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
+}
+.user {
+    padding-top: 30px;
+}
+.user span {
+    color: var(--greeny);
+}
+.toelist-logo {
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
+    color: var(--base-light);
+    font-size: 2rem;
+    width: fit-content;
+}
+.toelist-logo .logo {
+    position: absolute;
+    height: 60px;
+    width:130px;
+    margin-top: 60px;
+    background-color: var(--greeny);
+
+}
+.toelist-logo h1 {
+    position: relative;
+}
+.toelist-logo .dot {
+    color: var(--greeny);
+}
+
+.top-btn {
+    margin-bottom: 30px;
+    float: right;
+    padding-right: 15px;
+}
+.edit-profile {
+    background-color: var(--greeny);
+    color: var(--base-light);
+    padding: 10px;
+    border-radius: 90px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Aileron';
+    transition: ease    0.3s;
+}
+.logout {
+    background-color: var(--base-light);
+    color: var(--greeny);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 90px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Aileron';
+    transition: ease    0.3s;
+}
+.logout:hover {
+    background-color: var(--greeny);
+    color: var(--base-light);
+}
+.edit-profile:hover {
+    background-color: var(--base-light);
+    color: var(--greeny);
+}
+
+.container
+{
+    margin: 30px auto;
+    padding: 0 15px 0 15px;
+}
+
+.tabel .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tabel .btn a{
+    background-color: var(--greeny);
+    color: var(--base-light);
+    padding: 10px;
+    border-radius: 90px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Aileron';
+    transition: ease    0.3s;
+    box-shadow: -1px 11px 23px -7px rgba(0,0,0,0.59);
+    -webkit-box-shadow: -1px 11px 23px -7px rgba(0,0,0,0.59);
+    -moz-box-shadow: -1px 11px 23px -7px rgba(0,0,0,0.59);
+    width: 120px;
+    margin: 20px auto;
+}
+.tabel .btn a:hover{
+    background-color: var(--base-light);
+    color: var(--greeny);
+}
+.tabel {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--base-light);
+}
+.tabel h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Aileron';
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    -webkit-box-shadow: 0px 5px 13px 0px #000000; 
+box-shadow: 0px 5px 13px 0px #000000;
+}
+.tabel a {
+    color: var(--base-light);
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    border-radius: 90px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    background-color: var(--greeny);
+}
+.tabel a:hover {
+    background-color: var(--base-light);
+    color: var(--greeny);
+}
+.tabel td, th {
+    box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
+    -webkit-box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
+    -moz-box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
+    color: var(--base-light);
+    padding: 10px;
+}
+table {
+    -webkit-box-shadow: 0px 5px 13px 0px #000000; 
+box-shadow: 0px 5px 13px 0px #000000;
+    text-align: justify;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+/* Log */
+.h2-log {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: 'Aileron';
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    -webkit-box-shadow: 0px 5px 13px 0px #000000; 
+box-shadow: 0px 5px 13px 0px #000000;
+}
+.back-to-dashboard {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* input tugas */
+.h2-input {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Aileron';
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+form {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.input-tugas-input {
+    margin-bottom: 15px;
+    font-family: 'Aileron';
+    background-color: var(--base-light);
+    color: var(--base);
+    width: 80%;
+    padding: 10px;
+    border-radius: 90px;
+}
+.input-tugas-textarea {
+    font-family: 'Aileron';
+    background-color: var(--base-light);
+    color: var(--base);
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    height: 200px;
+}
+input {
+    margin: 0 auto;
+    text-align: center;
+}
+textarea {
+    text-align: center;
+}
+.input-tugas-btn {
+    background-color: var(--greeny);
+    color: var(--base-light);
+    padding: 10px;
+    border-radius: 90px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Aileron';
+    transition: ease    0.3s;
+    width: 30%;
+    margin: 20px auto;
+}
+.input-tugas-btn:hover {
+    background-color: var(--base-light);
+    color: var(--greeny);
+}
+/* responsive */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .header {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .toelist-logo {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .toelist-logo .logo {
+        margin-top: 40px;
+        width: 95px;
+    }
+    .user h2 {
+        font-size: 2rem;
+    }
+    .top-btn {
+        margin: 0 auto;
+        float: none;
+    }
+    .h2-input {
+        width: 300px;
+    }
+    .input-tugas-input {
+        width: 300px;
+    }
+    .input-tugas-textarea {
+        width: 300px;
+    }
+    .input-tugas-btn {
+        width: 120px;
+    }
+}
