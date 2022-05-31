@@ -48,6 +48,7 @@ if(isset($_POST['delete'])) {
     <head>
         <title>Toelist - Edit Data</title>
         <link rel="stylesheet" href="./css/edit-data.css">
+        <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/TransitionIn.css">
     </head>
     <body>

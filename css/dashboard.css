@@ -3,6 +3,16 @@
     --base-light : #fff;
     --greeny : #438972;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--base);
+}
+::-webkit-scrollbar-thumb{
+    background: #438972;
+    border-radius: 90px;
+}
 html {
     font-family: 'Aileron';
     scroll-behavior: smooth;
@@ -16,80 +26,6 @@ body {
     max-width: 1300px;
     padding: 0 15px;
 }
-.header {
-    text-transform: uppercase;
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
-    -webkit-box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
-    -moz-box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
-}
-.user {
-    padding-top: 30px;
-}
-.user span {
-    color: var(--greeny);
-}
-.toelist-logo {
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
-    color: var(--base-light);
-    font-size: 2rem;
-    width: fit-content;
-}
-.toelist-logo .logo {
-    position: absolute;
-    height: 60px;
-    width:130px;
-    margin-top: 60px;
-    background-color: var(--greeny);
-
-}
-.toelist-logo h1 {
-    position: relative;
-}
-.toelist-logo .dot {
-    color: var(--greeny);
-}
-
-.top-btn {
-    margin-bottom: 30px;
-    float: right;
-    padding-right: 15px;
-}
-.edit-profile {
-    background-color: var(--greeny);
-    color: var(--base-light);
-    padding: 10px;
-    border-radius: 90px;
-    text-decoration: none;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-family: 'Aileron';
-    transition: ease    0.3s;
-}
-.logout {
-    background-color: var(--base-light);
-    color: var(--greeny);
-    padding: 10px;
-    margin-left: 10px;
-    border-radius: 90px;
-    text-decoration: none;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-family: 'Aileron';
-    transition: ease    0.3s;
-}
-.logout:hover {
-    background-color: var(--greeny);
-    color: var(--base-light);
-}
-.edit-profile:hover {
-    background-color: var(--base-light);
-    color: var(--greeny);
-}
-
 .container
 {
     margin: 30px auto;
@@ -111,9 +47,8 @@ body {
     text-transform: uppercase;
     font-family: 'Aileron';
     transition: ease    0.3s;
-    box-shadow: -1px 11px 23px -7px rgba(0,0,0,0.59);
-    -webkit-box-shadow: -1px 11px 23px -7px rgba(0,0,0,0.59);
-    -moz-box-shadow: -1px 11px 23px -7px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     width: 120px;
     margin: 20px auto;
 }
@@ -154,16 +89,20 @@ box-shadow: 0px 5px 13px 0px #000000;
     background-color: var(--base-light);
     color: var(--greeny);
 }
-.tabel td, th {
-    box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
-    -webkit-box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
-    -moz-box-shadow: -1px 19px 66px -7px rgba(0,0,0,0.59);
+.tabel  th {
+    box-shadow: 1px 10px 34px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 10px 34px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 10px 34px -3px rgba(0,0,0,0.75);
     color: var(--base-light);
+    padding: 10px;  
+}
+.tabel td {
     padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 table {
     -webkit-box-shadow: 0px 5px 13px 0px #000000; 
-box-shadow: 0px 5px 13px 0px #000000;
+    box-shadow: 0px 5px 13px 0px #000000;
     text-align: justify;
     border-collapse: collapse;
     width: 80%;
@@ -181,7 +120,7 @@ box-shadow: 0px 5px 13px 0px #000000;
     margin-top: 20px;
     display: block;
     -webkit-box-shadow: 0px 5px 13px 0px #000000; 
-box-shadow: 0px 5px 13px 0px #000000;
+    box-shadow: 0px 5px 13px 0px #000000;
 }
 .back-to-dashboard {
     width: 60%;
@@ -191,18 +130,8 @@ box-shadow: 0px 5px 13px 0px #000000;
 }
 
 /* input tugas */
-.h2-input {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-family: 'Aileron';
-    margin-bottom: 10px;
-    text-align: center;
-    margin: 0 auto;
-    width: 400px;
-    display: block;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
+/* -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
 form {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -260,29 +189,6 @@ textarea {
 }
 /* responsive */
 @media only screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-    }
-    .header {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .toelist-logo {
-        font-size: 1.5rem;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .toelist-logo .logo {
-        margin-top: 40px;
-        width: 95px;
-    }
-    .user h2 {
-        font-size: 2rem;
-    }
-    .top-btn {
-        margin: 0 auto;
-        float: none;
-    }
     .h2-input {
         width: 300px;
     }

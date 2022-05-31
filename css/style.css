@@ -15,6 +15,16 @@ html {
     --base-light : #fff;
     --greeny : #438972;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--base);
+}
+::-webkit-scrollbar-thumb{
+    background: #438972;
+    border-radius: 90px;
+}
 body {
     background-color: var(--base);
     text-align: center;

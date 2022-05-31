@@ -27,6 +27,7 @@ if(isset($_GET['delete'])) {
     <!-- Head -->
     <head>
         <title>Toelist - Dashboard</title>
+        <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/dashboard.css">
         <link rel="stylesheet" href="./css/TransitionIn.css">
     </head>

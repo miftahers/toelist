@@ -34,19 +34,39 @@ if(isset($_POST['submit'])) {
 <html>
     <head>
         <title>Toelist - Edit Profile</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/edit-profile.css">
+        <link rel="stylesheet" href="css/TransitionIn.css">
+        <link rel="stylesheet" href="css/header.css">
     </head>
     <body>
-        <h2>Edit Profile</h2>
-        <div>
-            <form action="" method="POST">
-                <input type="email" placeholder="Email" name="email" value="<?php echo $email ?>" required disabled>
-                <input type="text" placeholder="Username" name="username" value="<?php echo $username ?>"required>
-                <input type="text" placeholder="Nomor Telepon 089x-xxxx-xxxx" name="telepon" value="<?php echo $telepon ?>" required>
-                <button name="submit">Update</button>
-            </form>
-            
-            <a href="index.php">Halaman utama</a>
+        <div class="header">
+            <div class="toelist-logo">
+                <div class="logo"></div>
+                <h1>TOELIST<span class="dot">.</span></h1>
+            </div>
+            <div class="user">
+                <h2>Selamat datang, <span><?php echo $_SESSION['username']; ?>!</span></h2>
+                <div class="top-btn">
+                    <a href="edit_profile.php" class="edit-profile">Edit profile</a> <a href="logout.php" class="logout">logout</a>
+                </div>
+            </div>
         </div>
+        <div class="container">
+            <div class="contents">
+                <h2>Edit <span>Profile</span></h2>
+                <form action="" method="POST">
+                    <p class="label">Email:</p>
+                    <input type="email" placeholder="Email" name="email" class="strict-update" value="<?php echo $email ?>" required disabled>
+                    <p class="label">Username:</p>
+                    <input type="text" placeholder="Username" name="username" value="<?php echo $username ?>"required>
+                    <p class="label">Telepon:</p>
+                    <input type="text" placeholder="Nomor Telepon 089x-xxxx-xxxx" name="telepon" value="<?php echo $telepon ?>" required>
+                    <button name="submit">Update</button>
+                </form>
+                <p class="atau">ATAU</p>
+                <p class="home-capsule"><a href="index.php" >Halaman utama</a></p>
+            </div>
+        </div>
+        
     </body>
 </html>

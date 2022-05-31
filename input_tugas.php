@@ -28,6 +28,7 @@ if(isset($_POST['submit'])) {
         <title>Toelist - Input Tugas</title>
         <link rel="stylesheet" href="./css/dashboard.css">
         <link rel="stylesheet" href="./css/TransitionIn.css">
+        <link rel="stylesheet" href="./css/header.css">
     </head>
     <body>
         <div class="header">
