@@ -92,7 +92,7 @@ if(isset($_GET['delete'])) {
                                 }
                                 
                             } else {
-                                echo "<p>Alhamdulillah tidak ada tugas</p>";
+                                echo '<p class="tidak-ada-tugas">Alhamdulillah tidak ada tugas</p>';
                             }
                             ?>
                         </table>

@@ -72,7 +72,7 @@
     background-color: var(--base-light);
     color: var(--greeny);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
     .header {
         flex-direction: column;
     }

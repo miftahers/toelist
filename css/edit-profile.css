@@ -126,7 +126,7 @@ button:hover {
     color: var(--greeny);
 }
 /* responsive*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
     .container .contents {
         margin: 40px auto;
         text-align: center;
