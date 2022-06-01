@@ -18,7 +18,7 @@ if(isset($_POST['submit'])) {
         $sql = "SELECT * FROM users WHERE email = '$email'";
         $result = mysqli_query($conn, $sql);
         if(!$result->num_rows > 0) {
-            $sql = "INSERT INTO users(username, email, password) VALUES ('$username', '$email', '$password')";
+            $sql = "INSERT INTO users(username, email, password, telepon) VALUES ('$username', '$email', '$password', '$telepon')";
             $result = mysqli_query($conn, $sql);
             if($result) {
                 echo "<script>alert('Register sukses'); window.location = 'login.php';</script>";
