@@ -25,8 +25,21 @@ if(isset($_POST['submit'])) {
     if($result) {
         $_SESSION['username'] = $username;
         header("Location: dashboard.php");
+    } else {
+        echo "<script>alert('Gagal update profile, coba lagi.')</script>"
     }
 
+}
+
+if(isset($_POST['delete'])) {
+    $sql = "DELETE FROM users WHERE email = '$email'";
+    $result = mysqli_query($conn, $sql);
+
+    if($result) {
+        header("Location: logout.php");
+    } else {
+        echo "<script>alert('Gagal delete profile, coba lagi.')</script>"
+    }
 }
 
 ?>
@@ -62,6 +75,7 @@ if(isset($_POST['submit'])) {
                     <p class="label">Telepon:</p>
                     <input type="text" placeholder="Nomor Telepon 089x-xxxx-xxxx" name="telepon" value="<?php echo $telepon ?>" required>
                     <button name="submit">Update</button>
+                    <button name="delete">Delete Profile</button>
                 </form>
                 <p class="atau">ATAU</p>
                 <p class="home-capsule"><a href="index.php" >Halaman utama</a></p>
