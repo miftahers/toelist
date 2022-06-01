@@ -34,6 +34,7 @@ if($result->num_rows > 0) {
         <link rel="stylesheet" href="./css/TransitionIn.css">
     </head>
     <body>
+        <h2>Detail Tugas</h2>
         <table>
             <tr>
                 <td>Mata Kuliah</td>
