@@ -26,7 +26,7 @@ if(isset($_POST['submit'])) {
         $_SESSION['username'] = $username;
         header("Location: dashboard.php");
     } else {
-        echo "<script>alert('Gagal update profile, coba lagi.')</script>"
+        echo "<script>alert('Gagal update profile, coba lagi.')</script>";
     }
 
 }
@@ -38,7 +38,7 @@ if(isset($_POST['delete'])) {
     if($result) {
         header("Location: logout.php");
     } else {
-        echo "<script>alert('Gagal delete profile, coba lagi.')</script>"
+        echo "<script>alert('Gagal delete profile, coba lagi.')</script>";
     }
 }
 
