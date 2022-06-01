@@ -50,11 +50,12 @@ if(isset($_POST['submit'])) {
                 <input type="password" placeholder="Password" name="password" required>
                 <button name="submit">Login</button>
             </form>
-            <p>Belum punya akun? <a href="register.php" class="reg-btn">Register</a> </p>
+            <p>Belum punya akun?</p>
+            <a href="register.php" class="reg-btn">Register</a> 
             <p>atau</p>
             <p><a href="index.php" class="home">Halaman utama</a></p>
             <br>
         </div>
-        <p>Made by Kelompok 2 - Toelist</p>
+        <p>Dibuat oleh Kelompok 2 - Toelist</p>
     </body>
 </html>

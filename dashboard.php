@@ -80,6 +80,9 @@ if(isset($_GET['delete'])) {
                                     // echo "<td>".$row['deadline']."</td>";
                                     echo "<td>".date("Y-m-d H:i", strtotime($row['deadline']))."</td>";
                                     echo "<td>
+                                        <a href='detail_tugas.php?id=$id'>
+                                        Detail
+                                        </a>
                                         <a href='edit_data.php?id=$id'>
                                         Edit
                                         </a>

@@ -1,0 +1,144 @@
+:root {
+    --base : #1f1f24;
+    --base-light : #fff;
+    --greeny : #438972;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--base);
+}
+::-webkit-scrollbar-thumb{
+    background: #438972;
+    border-radius: 90px;
+}
+html {
+    font-family: 'Aileron';
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--base);
+    color: var(--base-light);
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 15px;
+}
+.btd {
+    text-decoration: none;
+    color: var(--base-light);
+    display: block;
+    padding: 10px;
+    border-radius: 45px;
+    background-color: var(--greeny);
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 30px;
+}
+.btd:hover {
+    background-color: var(--base-light);
+    color: var(--greeny);
+}
+/* input tugas */
+.h2-input {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Aileron';
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+    display: block;
+}
+.h2-input span {
+    color: var(--greeny);
+}
+form {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.input-tugas-input {
+    margin-bottom: 15px;
+    font-family: 'Aileron';
+    background-color: var(--base-light);
+    color: var(--base);
+    width: 80%;
+    max-width: 600px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 90px;
+}
+.input-tugas-textarea {
+    font-family: 'Aileron';
+    background-color: var(--base-light);
+    color: var(--base);
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    height: 300px;
+    font-size: 1.2rem;
+    
+}
+input {
+    margin: 0 auto;
+    text-align: center;
+}
+.datetime {
+    cursor: pointer;
+}
+textarea {
+    text-align: center;
+}
+.input-tugas-btn {
+    background-color: var(--greeny);
+    color: var(--base-light);
+    padding: 15px;
+    border-radius: 90px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Aileron';
+    transition: ease    0.3s;
+    width: 30%;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.input-tugas-btn:hover {
+    background-color: var(--base-light);
+    color: var(--greeny);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .btd {
+        width: 60%;
+        padding: 15px;
+    }
+    .h2-input {
+        font-size: 2rem;
+    }
+    .input-tugas-input {
+        font-size: 1rem;
+        width: 60%;
+        height: 45px;
+    }
+    .input-tugas-textarea {
+        font-size: 1rem;
+        width: 60%;
+        height: 200px;
+    }
+    .input-tugas-btn {
+        width: 60%;
+        padding: 15px;
+    }
+}

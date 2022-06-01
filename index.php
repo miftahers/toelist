@@ -21,8 +21,8 @@ if(isset($_SESSION['email'])) {
                 <h1>TOELIST<span class="dot">.</span></h1>
             </div>
             <div class="login">
-                <a href="login.php" class="login-btn">Login</a>
-                <a href="register.php" class="reg-btn">Register</a>
+                <a href="login.php" class="login-btn">Masuk</a>
+                <a href="register.php" class="reg-btn">Daftar</a>
             </div>
         </div>
     </body>

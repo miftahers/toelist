@@ -36,32 +36,38 @@ $email = $_SESSION['email'];
         <div class="container">
             <div class="contents">
                 <div class="tabel">
-                    <a href="dashboard.php" class="back-to-dashboard">Kembali ke dashboard</a>
+                    <a href="dashboard.php" class="btd">Kembali ke dashboard</a>
                     <h2 class="h2-log">Log</h2>
-                    <table>
+                        <?php
+
+                        $sql = "SELECT * FROM tugas_selesai WHERE owner = '$email' ORDER BY DATE DESC";
+                        $result = mysqli_query($conn, $sql);
+
+                        if($result->num_rows > 0) {
+                            echo '
+                            <table>
                         <tr>
                             <th>No</th>
                             <th>Mata kuliah</th>
                             <th>Deskripsi</th>
                             <th>Date</th>
                         </tr>
-                        <?php
-
-                        $sql = "SELECT * FROM tugas_selesai WHERE owner = '$email' ORDER BY DATE DESC";
-                        $result = mysqli_query($conn, $sql);
-                        $i = 1;
-                        while($row = mysqli_fetch_array($result)) {
-                            $id = $row['id'];
-                            echo "<tr>";
-                            echo "<td>$i</td>";
-                            echo "<td>".$row['nama']."</td>";
-                            echo "<td>".$row['deskripsi']."</td>";
-                            // echo "<td>".$row['deadline']."</td>";
-                            echo "<td>".date("Y-m-d H:i", strtotime($row['date']))."</td>";
-                            echo "</tr>";
-                            $i = $i + 1;
+                        ';
+                            $i = 1;
+                            while($row = mysqli_fetch_array($result)) {
+                                $id = $row['id'];
+                                echo "<tr>";
+                                echo "<td>$i</td>";
+                                echo "<td>".$row['nama']."</td>";
+                                echo "<td>".$row['deskripsi']."</td>";
+                                // echo "<td>".$row['deadline']."</td>";
+                                echo "<td>".date("Y-m-d H:i", strtotime($row['date']))."</td>";
+                                echo "</tr>";
+                                $i = $i + 1;
+                            }
+                        } else {
+                            echo '<p class="tidak-ada-tugas">Belum ada tugas yang selesai</p>';
                         }
-                        
                         ?>
                     </table>
                 </div>

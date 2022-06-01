@@ -66,7 +66,7 @@ if(isset($_POST['delete'])) {
         </div>
         <div class="container">
             <div class="contents">
-                <a href="dashboard.php">Kembali ke dashboard</a>
+                <a href="dashboard.php" class="btd">Kembali ke dashboard</a>
                 <h2>Edit <span>Data</span></h2>
                 <br><br>
                 <form action="" method="post">

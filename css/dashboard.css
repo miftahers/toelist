@@ -95,10 +95,19 @@ box-shadow: 0px 5px 13px 0px #000000;
     -moz-box-shadow: 1px 10px 34px -3px rgba(0,0,0,0.75);
     color: var(--base-light);
     padding: 10px;  
+    text-align: center;
+    font-size: 1.5rem;
 }
 .tabel td {
     padding: 10px;
+    font-size: 1.2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 table {
     -webkit-box-shadow: 0px 5px 13px 0px #000000; 
@@ -122,84 +131,14 @@ table {
     -webkit-box-shadow: 0px 5px 13px 0px #000000; 
     box-shadow: 0px 5px 13px 0px #000000;
 }
-.back-to-dashboard {
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    max-width: 400px;
-}
-
-/* input tugas */
-.h2-input {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-family: 'Aileron';
-    margin-bottom: 10px;
-    text-align: center;
-    margin: 0 auto;
-    width: 80%;
-    margin-top: 20px;
-    display: block;
-}
-.h2-input span {
-    color: var(--greeny);
-}
-form {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.input-tugas-input {
-    margin-bottom: 15px;
-    font-family: 'Aileron';
-    background-color: var(--base-light);
-    color: var(--base);
-    width: 80%;
-    max-width: 400px;
-    padding: 10px;
-    border-radius: 90px;
-}
-.input-tugas-textarea {
-    font-family: 'Aileron';
-    background-color: var(--base-light);
-    color: var(--base);
-    padding: 10px;
-    width: 80%;
-    max-width: 400px;
-    margin-bottom: 15px;
-    border-radius: 25px;
-    height: 200px;
-}
-input {
-    margin: 0 auto;
-    text-align: center;
-}
-.datetime {
-    cursor: pointer;
-}
-textarea {
-    text-align: center;
-}
-.input-tugas-btn {
-    background-color: var(--greeny);
-    color: var(--base-light);
-    padding: 10px;
-    border-radius: 90px;
-    text-decoration: none;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-family: 'Aileron';
-    transition: ease    0.3s;
-    width: 30%;
-    margin: 20px auto;
-    cursor: pointer;
-}
-.input-tugas-btn:hover {
-    background-color: var(--base-light);
-    color: var(--greeny);
-    cursor: pointer;
-}
 .tidak-ada-tugas {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 400px;
+    padding-top: 50px;
+}
+.btd {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -208,19 +147,27 @@ textarea {
 }
 /* responsive */
 @media only screen and (max-width: 1080px) {
-    .back-to-dashboard {
-        max-width: 280px;
+    .tabel h3 {
+        font-size: 1.5rem;
     }
-    .h2-input {
-        width: 300px;
+    .tabel th {
+        font-size: 1.2rem;
     }
-    .input-tugas-input {
-        width: 300px;
+    .tabel td {
+        font-size: 1.2rem;
     }
-    .input-tugas-textarea {
-        width: 300px;
+    .tabel .btn {
+        width: 80%;
+        display: flex;
+        margin: 15px auto;
+        flex-direction: column;
     }
-    .input-tugas-btn {
-        width: 120px;
+    .tabel .btn a {
+        padding: 15px;
+        width: 95%;
+        font-size: 1.5rem;
+    }  
+    table a{
+        padding: 15px;
     }
 }

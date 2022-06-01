@@ -75,8 +75,6 @@
 @media only screen and (max-width: 1080px) {
     .header {
         flex-direction: column;
-    }
-    .header {
         font-size: 2rem;
         text-align: center;
     }
@@ -90,10 +88,31 @@
         width: 95px;
     }
     .user h2 {
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
     .top-btn {
+        display: flex;
         margin: 0 auto;
         float: none;
+        width: 100%;
+        flex-direction: column;
+        max-width: 1000px;
     }
+    .top-btn a {
+        width: 75%;
+        margin: 0 auto;
+        float: none;
+        padding: 15px;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    .edit-profile {
+        margin: 0 auto;
+        width: 400px;
+    }
+    .logout {
+        margin: 0 auto;
+        width: 400px;
+    }
+
 }

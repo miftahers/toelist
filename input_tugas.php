@@ -26,7 +26,7 @@ if(isset($_POST['submit'])) {
 <html>
     <head>
         <title>Toelist - Input Tugas</title>
-        <link rel="stylesheet" href="./css/dashboard.css">
+        <link rel="stylesheet" href="./css/input-tugas.css">
         <link rel="stylesheet" href="./css/TransitionIn.css">
         <link rel="stylesheet" href="./css/header.css">
     </head>
@@ -47,9 +47,9 @@ if(isset($_POST['submit'])) {
         <div class="container">
             <div class="contents">
                 <div class="tabel">
-                <a href="dashboard.php" class="back-to-dashboard">Kembali ke dashboard</a>
+                <a href="dashboard.php" class="btd">Kembali ke dashboard</a>
                 <br>
-                <h2 class="h2-input">Input <span>Tugas</span></h2>
+                <h2 class="h2-input">Buat <span>Tugas</span></h2>
                 <br><br>
                 <form action="" method="post">
                     <input class="input-tugas-input" type="text" name="nama" placeholder="Mata Kuliah" required>

@@ -41,7 +41,7 @@ if(isset($_POST['submit'])) {
 
 <html>
     <head>
-        <title>Toelist - Register</title>
+        <title>Toelist - Daftar</title>
         <link rel="stylesheet" href="./css/style-login.css">
         <link rel="stylesheet" href="./css/TransitionIn.css">
     </head>
@@ -52,26 +52,27 @@ if(isset($_POST['submit'])) {
                 <h1>TOELIST<span class="dot">.</span></h1>
             </div>
         <div class="container">
-        <h2>Create <span>Account</span></h2>
+        <h2>Buat <span>Akun</span></h2>
             <form action="" method="POST">
-                <label for="username">Username:</label>
+                <label for="username">Nama Pengguna:</label>
                 <input type="text" placeholder="Contoh: Miftah123" name="username" required>
                 <label for="email">Email:</label>
                 <input type="email" placeholder="Contoh: example@email.com" name="email" required>
-                <label for="password">Password:</label>
-                <input type="password" placeholder="Tulis Password Baru" name="password" required>
-                <label for="password2">Konfirmasi Password:</label>
-                <input type="password" placeholder="Tulis Kembali Password Baru" name="password2" required>
-                <label for="telepon">Telepon:</label>
+                <label for="password">Kata Sandi:</label>
+                <input type="password" placeholder="Tulis Kata Sandi Baru" name="password" required>
+                <label for="password2">Konfirmasi Kata Sandi:</label>
+                <input type="password" placeholder="Tulis Kembali Kata Sandi Baru" name="password2" required>
+                <label for="telepon">Nomor WhatsApp:</label>
                 <input type="text" placeholder="Contoh: 081XXXXXXXXX" name="telepon" required>
-                <button name="submit">Register</button>
+                <button name="submit">Daftar</button>
             </form>
-            <p>Sudah punya akun? <a href="login.php" class="login-btn">Login</a></p>
+            <p>Sudah punya akun?</p>
+            <a href="login.php" class="login-btn">Masuk</a>
             <p>atau</p>
             <p><a href="index.php" class="home">Halaman utama</a></p>
             <br>
         </div>
-        <p>Made by Kelompok 2 - Toelist</p>
+        <p>Dibuat oleh Kelompok 2 - Toelist</p>
         <br>
     </body>
 </html>

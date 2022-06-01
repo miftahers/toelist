@@ -74,7 +74,7 @@ body {
     text-decoration: none;
     display: block;
     border-radius: 90px;
-    padding: 20px 20px;
+    padding: 30px;
 }
 .login .login-btn {
     background-color: var(--greeny);
@@ -115,22 +115,24 @@ body {
         margin-top: 24vh;
     }
     .toelist-logo {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 9vh;
     }
     .toelist-logo .logo {
         margin-top: 10px;
-        height: 60px;
-        width: 130px;
+        height: 100px;
+        width: 190px;
     }
     .login {
-        width: 24s0px;
+        width: 100%;
         margin: 0 auto;
+        padding: 0;
     }
     .login a {
         font-size: 1rem;
-        width: 100%;
+        width: 360px;
         margin: 0 auto;
+        padding: 30px;
     }
     .login .login-btn {
         font-size: 2rem;
