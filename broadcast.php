@@ -5,8 +5,8 @@ include 'config.php';
 //require_once ('vendor/autoload.php'); // if you use Composer
 require_once('api/ultramsg.php'); // if you download ultramsg.class.php
 
-$ultramsg_token="iicsx3j667j2csbn"; // Ultramsg.com token
-$instance_id="instance7636"; // Ultramsg.com instance id
+$ultramsg_token="m644rvsabbl9jwd3"; // Ultramsg.com token
+$instance_id="instance8757"; // Ultramsg.com instance id
 $client = new UltraMsg\WhatsAppApi($ultramsg_token,$instance_id);
 
 $sql = "SELECT tugas.*, users.telepon, users.username FROM tugas LEFT JOIN users ON tugas.owner = users.email";
